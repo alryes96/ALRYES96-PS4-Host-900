@@ -1,22 +1,17 @@
-# ALRYES96 PS4 Host — Firmware 9.00
+# المصادر والتراخيص — ALRYES96 PS4 Host 9.00
 
-This repository is a separate workspace for organizing a PS4 firmware 9.00 host.
+## PSFree / Lapse
+ملفات JavaScript ضمن `900/` تحتوي إشعارات حقوق نشر PSFree وتذكر GNU AGPL-3.0-or-later. تم تضمين نص الرخصة في `COPYING-AGPL-3.0.txt`، مع الاحتفاظ بإشعارات الملفات المصدرية.
+المصدر المرجعي للمشروع: https://kmeps4.github.io/PSFree/about.html
 
-## Current status
-- The landing page is a placeholder.
-- No exploit chain or payload is currently wired into the page.
-- Do not connect or test unverified exploit files.
+## GoldHEN payload
+الملف `goldhen_2.4b18.12.bin` مأخوذ كما هو من الأرشيف الذي رفعه المستخدم. لم يُعدّل الملف الثنائي. ينبغي التأكد من شروط إعادة توزيعه من مصدره الأصلي قبل نشر نسخة عامة جديدة. مرجع الإصدارات: https://github.com/GoldHEN/GoldHEN/releases
 
-## Source and license checklist
-Before copying any third-party component here:
-1. Record the upstream repository and original author.
-2. Read the exact license for that file/component.
-3. Preserve all copyright and attribution notices.
-4. Do not assume the top-level repository license covers bundled payloads, binary patches, or imported components.
-5. Add a source/license record for each third-party component before publishing it.
+## أصول العلامة
+`style.css`, `img.jpg`, `logo-alryes96.jpg` نُقلت من المشروع الذي رفعه المستخدم لإبقاء واجهة ALRYES96 متسقة.
 
-## Stability
-Separate repositories can prevent accidental file/path collisions, but do not by themselves prevent crashes, kernel panics, or restarts. Firmware compatibility and payload provenance must be independently verified.
+## محتوى غير منقول
+لم تُضمّن صور `btc.jpg` أو `eth.jpg` أو أي صفحة/ملفات للإصدارات الأخرى غير مجلد تبعيات 900. ملفات `900/lapse/903.js`, `900/lapse/950.js`, `900/rop/950.js` وملفات ELF لـ903/950 محفوظة مؤقتاً فقط لأن كود PSFree الحالي يستورد/يربط بعض هذه التبعيات؛ وجودها لا يعني أن صفحة المضيف تتيح إصدارات تلك الأنظمة.
 
-## Attribution
-ALRYES96 by ALRYES96. Third-party components retain their respective owners and license terms.
+## ملاحظة استقرار
+فصل المضيف إلى مستودع مستقل يخفف تعارض المسارات، لكنه لا يضمن عدم حدوث تجمّد أو إعادة تشغيل. اختبر فقط على جهاز تملكه، واحتفظ بنسخة احتياطية من بيانات الحفظ.

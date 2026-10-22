@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" manifest="900.manifest">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#050914">
+<title>ALRYES96 | تجهيز الكاش دون إنترنت</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="cache-page">
+<script>
+history.replaceState(null,null,'index.html');var histlength=history.length;history.go(-histlength);
+function DLProgress(e){var Percent=Math.round(e.loaded / e.total * 100);window.msgs.innerHTML="تجهيز الكاش دون إنترنت: " + Percent + "%";}
+function DisplayCacheProgress(){window.msgs.innerHTML="اكتمل تجهيز الكاش بنجاح ✓";setTimeout(function(){window.msgs.innerHTML="أغلق المتصفح وافتحه مجدداً";},1500);}
+window.applicationCache.addEventListener("progress",DLProgress,false);
+window.applicationCache.oncached=function(e){DisplayCacheProgress();};
+window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
+window.applicationCache.onerror=function(e){window.msgs.innerHTML="تعذّر تجهيز الكاش. افتح الصفحة مع الإنترنت وحاول مرة أخرى.";};
+</script>
+<header class="site-header">
+  <div class="brand-lockup"><img class="brandmark" src="logo-alryes96.jpg" alt="شعار مكتب آلريس"><div><p class="brand-title">مكتب آلريس للألعاب والأجهزة الإلكترونية</p><p class="brand-subtitle">ALRYES96 · OFFLINE CACHE</p></div></div>
+  <span class="brand-pill"><i></i> تجهيز أول مرة</span>
+</header>
+<main class="page-main">
+  <div class="eyebrow"><i></i> PS4 · OFFLINE CACHE SETUP</div>
+  <h1 class="hero-title"><span>ALRYES96</span> CACHE</h1>
+  <p class="hero-subtitle">تهيئة الملفات المطلوبة للاستخدام دون إنترنت</p>
+  <section class="cache-panel">
+    <div class="panel-head"><strong>جاري تجهيز الكاش</strong><span>OFFLINE PREPARATION</span></div>
+    <div class="cache-card"><div class="cache-icon"><span class="spin"></span></div><div><h2 id="msgs">جاري تجهيز الملفات للاستخدام دون إنترنت...</h2><p>اترك الإنترنت متصلاً وانتظر اكتمال العملية. عند ظهور رسالة الاكتمال أغلق المتصفح وافتحه مجدداً.</p></div></div>
+    <div class="progressbar" aria-hidden="true"><span></span></div>
+    <p class="panel-hint">لا تطفئ الجهاز ولا تغلق المتصفح أثناء تجهيز الكاش.</p>
+  </section>
+</main>
+<footer class="site-footer">ALRYES96 · مكتب آلريس للألعاب والأجهزة الإلكترونية<small>مساهمات المطورين الأصليين محفوظة في ملفات المصدر.</small></footer>
+</body>
+</html>
